@@ -1,5 +1,5 @@
 import "./header.css";
-import logoSrc from "../assets/marsilu.png";
+import logoSrc from "../assets/sloth.svg";
 import { createElement } from "../utils/elements";
 
 function Header() {
