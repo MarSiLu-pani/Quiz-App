@@ -1,0 +1,19 @@
+export async function getQuestions(amount) {
+  const url = `https://opentdb.com/api.php?amount=${amount}`;
+  const response = await fetch(url);
+  const questions = await response.json();
+  const formattedQuestions = questions.results.map((question) => {
+    const answers = [...question.incorrect_answers];
+    answers.push(question.correct_answer);
+    return {
+      category: question.category,
+      type: question.type,
+      difficulty: question.difficulty,
+      question: question.question,
+      correct_answer: question.correct_answer,
+      answers: answers,
+    };
+  });
+  console.log(formattedQuestions);
+  return formattedQuestions;
+}
