@@ -1,0 +1,14 @@
+.quizCard {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.quizCard__answers {
+  display: flex;
+  flex-direction: column;
+}
+.quizCard__answers__button {
+  font-family: "Lexend Deca", sans-serif;
+  margin: 20px 5px 10px;
+  cursor: pointer;
+}

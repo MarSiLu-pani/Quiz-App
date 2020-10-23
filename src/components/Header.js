@@ -1,5 +1,5 @@
 import "./header.css";
-import logoSrc from "../assets/logo.png";
+import logoSrc from "../assets/sloth.svg";
 import { createElement } from "../utils/elements";
 
 function Header() {
@@ -8,10 +8,16 @@ function Header() {
     alt: "Logo",
   });
 
+  const title = createElement("span", {
+    className: "header__title",
+    innerText: "MarSiLu-Pani",
+  });
+
   const header = createElement("header", {
     className: "header",
-    children: [logo],
+    children: [logo, title],
   });
+
   return header;
 }
 
