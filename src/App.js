@@ -9,6 +9,9 @@ import { getQuestions } from "./utils/api";
 
 function App() {
   const header = Header();
+  const button = createElement("button", {
+    innerText: "Next question",
+  });
 
   //Quizcard
   const main = createElement("main", {});
@@ -27,7 +30,7 @@ function App() {
 
   const container = createElement("div", {
     className: "container",
-    children: [header, main],
+    children: [header, main, button],
   });
 
   loadAllQuestions(1);
