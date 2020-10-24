@@ -20,7 +20,10 @@
   grid-template-rows: 50% 50%;
   margin: 0;
 }
-.quizCard__answers__button {
+.quizCard__answers__button1,
+.quizCard__answers__button2,
+.quizCard__answers__button3,
+.quizCard__answers__button4 {
   font-family: "Lexend Deca", sans-serif;
   margin: 10px;
   padding: 15px;
@@ -34,4 +37,9 @@
   color: #5a0fbc;
   border: 2px solid #5a0fbc;
   background-color: #fcf2fc;
+}
+
+.buttonWrong {
+  color: red;
+  background-color: thistle;
 }

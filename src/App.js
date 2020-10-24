@@ -13,6 +13,12 @@ function App() {
     innerText: "Next question",
   });
 
+  const reloadButton = createElement("button", {
+    className: "reloadButton",
+    innerText: "Next question",
+    /* onclick: window.location.reload(), */
+  });
+
   //Quizcard
   const main = createElement("main", {});
 
@@ -31,6 +37,8 @@ function App() {
   const container = createElement("div", {
     className: "container",
     children: [header, main, button],
+
+
   });
 
   loadAllQuestions(1);
