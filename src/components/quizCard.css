@@ -2,13 +2,36 @@
   display: flex;
   flex-direction: column;
   background-color: white;
+  border-radius: 20px;
+  padding: 1%;
 }
 .quizCard__answers {
   display: flex;
   flex-direction: column;
 }
-.quizCard__answers__button {
+
+.quizcard__answer__buttons:nth-child(4):focus {
+  color: green;
+}
+
+.quizcard__answer__buttons:nth-child(1):focus {
+  color: red;
+}
+
+.quizcard__answer__buttons:nth-child(2):focus {
+  color: red;
+}
+
+.quizcard__answer__buttons:nth-child(3):focus {
+  color: red;
+}
+
+.quizcard__answer__buttons {
   font-family: "Lexend Deca", sans-serif;
   margin: 20px 5px 10px;
   cursor: pointer;
+}
+
+.quizCard__question {
+  text-align: center;
 }

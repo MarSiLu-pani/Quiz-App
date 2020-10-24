@@ -11,6 +11,8 @@ function App() {
   const header = Header();
   const button = createElement("button", {
     innerText: "Next question",
+    className: "nextButton",
+    /* onclick:  */
   });
 
   //Quizcard
@@ -34,7 +36,7 @@ function App() {
   });
 
   loadAllQuestions(1);
-  // getQuestions(10);
+
   return container;
 }
 export default App;

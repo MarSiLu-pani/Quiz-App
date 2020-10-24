@@ -2,6 +2,23 @@ import { createElement } from "../utils/elements";
 import "./quizCard.css";
 
 function AnswerContainer(answers, correct_answer) {
+  let incorrectAnswerButtons = answers.map((element) =>
+    createElement("button", {
+      className: "quizcard__answer__buttons",
+      innerHTML: element,
+    })
+  );
+
+  const answerContainer = createElement("div", {
+    className: "quizCard__answers",
+    children: [...incorrectAnswerButtons],
+  });
+  return answerContainer;
+}
+
+export default AnswerContainer;
+
+/* function AnswerContainer(answers, correct_answer) {
   const answer1 = answers[0];
   const answerButton1 = createElement("button", {
     className: "quizCard__answers__button",
@@ -28,6 +45,4 @@ function AnswerContainer(answers, correct_answer) {
     children: [answerButton1, answerButton2, answerButton3, answerButton4],
   });
   return answerContainer;
-}
-
-export default AnswerContainer;
+} */
