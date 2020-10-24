@@ -9,6 +9,9 @@ import { getQuestions } from "./utils/api";
 
 function App() {
   const header = Header();
+  const button = createElement("button", {
+    innerText: "Next question",
+  });
 
   const reloadButton = createElement("button", {
     className: "reloadButton",
@@ -33,7 +36,9 @@ function App() {
 
   const container = createElement("div", {
     className: "container",
-    children: [header, main, reloadButton],
+    children: [header, main, button],
+
+
   });
 
   loadAllQuestions(1);
