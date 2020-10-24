@@ -13,7 +13,8 @@ function App() {
   const button = createElement("button", {
     innerText: "Next question",
     className: "nextButton",
-  });
+    onclick: () => window.location.reload(),
+ });
 
   const main = createElement("main", {});
 
