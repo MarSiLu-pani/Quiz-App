@@ -7,8 +7,16 @@
   display: flex;
   flex-direction: column;
 }
-.quizCard__answers__button {
+.quizCard__answers__button1,
+.quizCard__answers__button2,
+.quizCard__answers__button3,
+.quizCard__answers__button4 {
   font-family: "Lexend Deca", sans-serif;
   margin: 20px 5px 10px;
   cursor: pointer;
+}
+
+.buttonWrong {
+  color: red;
+  background-color: thistle;
 }

@@ -10,6 +10,12 @@ import { getQuestions } from "./utils/api";
 function App() {
   const header = Header();
 
+  const reloadButton = createElement("button", {
+    className: "reloadButton",
+    innerText: "Next question",
+    /* onclick: window.location.reload(), */
+  });
+
   //Quizcard
   const main = createElement("main", {});
 
@@ -27,7 +33,7 @@ function App() {
 
   const container = createElement("div", {
     className: "container",
-    children: [header, main],
+    children: [header, main, reloadButton],
   });
 
   loadAllQuestions(1);
