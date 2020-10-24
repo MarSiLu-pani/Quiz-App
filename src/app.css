@@ -32,8 +32,26 @@ body {
 }
 
 .nextButton {
-  border-radius: 20px;
-  margin-top: 1rem;
-  border: 1px solid black;
-  font-size: 0.9rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 0.5rem;
+  background-color: #5a0fbc;
+  border: 2px solid #5a0fbc;
+  opacity: 0.5;
+  font-size: 0.95rem;
+  letter-spacing: 0.09rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  line-height: 1.5rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.nextButton:hover {
+  background-color: #5a0fbc;
+  opacity: 1;
 }

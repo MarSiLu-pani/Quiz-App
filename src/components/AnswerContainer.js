@@ -2,7 +2,6 @@ import { createElement } from "../utils/elements";
 import "./quizCard.css";
 
 function AnswerContainer(answers, correct_answer) {
-
   let incorrectAnswerButtons = answers.map((element) =>
     createElement("button", {
       className: "quizcard__answer__buttons",
