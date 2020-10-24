@@ -29,3 +29,10 @@ body {
 .bg-primary {
   background: var(--bg-primary);
 }
+
+.nextButton {
+  border-radius: 20px;
+  margin-top: 1rem;
+  border: 1px solid black;
+  font-size: 0.9rem;
+}
