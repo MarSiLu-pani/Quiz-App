@@ -38,12 +38,10 @@
 }
 .quizcard__answer__buttons:nth-child(4):focus {
   color: green;
-  background: rgba(89, 173, 89, 0.514);
 }
 /*(-n+3)= the first three children */
 .quizcard__answer__buttons:nth-child(-n + 3):focus {
   color: red;
-  background: rgba(231, 59, 59, 0.514);
 }
 
 .quizcard__answer__buttons:hover {
