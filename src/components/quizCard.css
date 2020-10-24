@@ -4,32 +4,46 @@
   background-color: white;
   border-radius: 20px;
   padding: 1%;
+
 }
+
+.quizCard__question {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-bottom: 15px;
+  letter-spacing: 0.05rem;
+}
+
 .quizCard__answers {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  margin: 0;
 }
 
-.quizcard__answer__buttons:nth-child(4):focus {
-  color: green;
-}
+.quizCard__answers__button1,
+.quizCard__answers__button2,
+.quizCard__answers__button3,
+.quizCard__answers__button4 {
 
-.quizcard__answer__buttons:nth-child(1):focus {
-  color: red;
-}
-
-.quizcard__answer__buttons:nth-child(2):focus {
-  color: red;
-}
-
-.quizcard__answer__buttons:nth-child(3):focus {
-  color: red;
-}
-
-.quizcard__answer__buttons {
   font-family: "Lexend Deca", sans-serif;
-  margin: 20px 5px 10px;
+  margin: 10px;
+  padding: 15px;
   cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.95rem;
+  letter-spacing: 0.09rem;
+  line-height: 1.5rem;
+  color: #5a0fbc;
+  border: 2px solid #5a0fbc;
+  background-color: #fcf2fc;
+}
+
+.buttonWrong {
+  color: red;
+  background-color: thistle;
 }
 
 .quizCard__question {

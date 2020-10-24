@@ -13,7 +13,9 @@ function App() {
   const button = createElement("button", {
     innerText: "Next question",
     className: "nextButton",
+    onclick: window.location.reload(),
   });
+  
   const main = createElement("main", {});
 
   //B. hier bilden eine neue Funktion (loadAllQuestions), mit der wir auf die Daten aus der API zugreifen (bisher in api.js). In const questionCard speichern
@@ -34,6 +36,8 @@ function App() {
   const container = createElement("div", {
     className: "container",
     children: [header, main, button],
+
+
   });
 
   //D. hier rufen wir die funktion loadAllQuestions auf, wordurch wir eine/"1" question laden und die gefilterten Daten
