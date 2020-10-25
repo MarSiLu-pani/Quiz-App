@@ -29,7 +29,7 @@ export async function getQuestions(amount) {
   //4. wir speichern in der const formattedQuestions jetzt die Daten, die wir benötigen (z.B. const answers=incorrect_answers + correct_answer)
   const formattedQuestions = questions.results.map((question) => {
     const answers = [...question.incorrect_answers];
-    /* answers.push(question.correct_answer); */
+
     //5. hier returnen wir alle Daten, die wir weiterverwenden noch mal in einer einfacheren variable
     return {
       category: question.category,
