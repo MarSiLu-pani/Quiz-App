@@ -36,15 +36,15 @@
   border: 2px solid #5a0fbc;
   background-color: #fcf2fc;
 }
-.quizcard__answer__buttons:nth-child(4):focus {
+/* .quizcard__answer__buttons:nth-child(4):focus {
   color: green;
   background: rgba(15, 163, 15, 0.397);
 }
 /*(-n+3)= the first three children */
-.quizcard__answer__buttons:nth-child(-n + 3):focus {
+/* .quizcard__answer__buttons:nth-child(-n + 3):focus {
   color: red;
-  background: rgba(194, 38, 38, 0.349);
-}
+  background: rgba(194, 38, 38, 0.349); 
+}*/
 
 .quizcard__answer__buttons:hover {
   background-color: #5a0fbc;
