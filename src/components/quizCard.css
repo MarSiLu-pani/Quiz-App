@@ -36,17 +36,16 @@
   border: 2px solid #5a0fbc;
   background-color: #fcf2fc;
 }
-.quizcard__answer__buttons:nth-child(4):focus {
+.correct__answer__button {
   color: green;
   background: rgba(15, 163, 15, 0.397);
 }
 /*(-n+3)= the first three children */
-.quizcard__answer__buttons:nth-child(-n + 3):focus {
+.incorrect__answer__buttons {
   color: red;
   background: rgba(194, 38, 38, 0.349);
 }
-
-.quizcard__answer__buttons:hover {
+*/ .quizcard__answer__buttons:hover {
   background-color: #5a0fbc;
   color: #fcf2fc;
 }
