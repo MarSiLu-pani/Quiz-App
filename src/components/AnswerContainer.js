@@ -11,12 +11,19 @@ function AnswerContainer(answers, correct_answer) {
   }
 
   randomizeAnswers(allAnswers);
-  console.log(allAnswers);
+  console.log(correct_answer);
 
   let allAnswersRandom = allAnswers.map((element) =>
     createElement("button", {
       className: "quizcard__answer__buttons",
       innerHTML: element,
+      onclick: function () {
+        if (element === correct_answer) {
+          alert("U r right!");
+        } else {
+          alert("U r wrong!");
+        }
+      },
     })
   );
 
