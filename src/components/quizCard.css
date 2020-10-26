@@ -59,3 +59,13 @@
 .quizCard__question {
   text-align: center;
 }
+
+.correct__answer {
+  color: green;
+  background: rgba(15, 163, 15, 0.397);
+}
+
+.incorrect__answer {
+  color: red;
+  background: rgba(194, 38, 38, 0.349);
+}

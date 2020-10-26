@@ -13,19 +13,20 @@ function AnswerContainer(answers, correct_answer) {
   randomizeAnswers(allAnswers);
   console.log(correct_answer);
 
-  let allAnswersRandom = allAnswers.map((element) =>
-    createElement("button", {
+  let allAnswersRandom = allAnswers.map((element) => {
+    const button = createElement("button", {
       className: "quizcard__answer__buttons",
       innerHTML: element,
       onclick: function () {
         if (element === correct_answer) {
-          alert("U r right!");
+          button.classList.add("correct__answer");
         } else {
-          alert("U r wrong!");
+          button.classList.add("incorrect__answer");
         }
       },
-    })
-  );
+    });
+    return button;
+  });
 
   const answerContainer = createElement("div", {
     className: "quizCard__answers",

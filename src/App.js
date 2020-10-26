@@ -13,8 +13,8 @@ function App() {
   const button = createElement("button", {
     innerText: "Next question",
     className: "nextButton",
-    onclick: () => window.location.reload(),
- });
+    onclick: () => loadAllQuestions(1),
+  });
 
   const main = createElement("main", {});
 
@@ -29,6 +29,7 @@ function App() {
         correct_answer: question.correct_answer,
       });
     });
+    main.innerHTML = "";
     main.append(...questionCard);
   }
 
