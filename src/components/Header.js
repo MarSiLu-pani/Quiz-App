@@ -10,7 +10,7 @@ function Header() {
 
   const title = createElement("span", {
     className: "header__title",
-    innerText: "MarSiLu-Pani",
+    innerText: "Quiz App",
   });
 
   const header = createElement("header", {

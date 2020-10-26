@@ -1,10 +1,18 @@
 .header {
-  height: 64px;
+  height: auto;
   display: flex;
-  justify-content: center;
+  width: 60vw;
+  justify-content: flex-start;
 }
 
 .header > img {
-  height: 50px;
+  height: 200px;
   background: transparent;
+  margin: 20px 0;
+}
+
+.header__title {
+  align-self: center;
+  font-size: 3rem;
+  margin-left: 20px;
 }

@@ -3,7 +3,7 @@
   flex-direction: column;
   background-color: white;
   padding: 60px;
-  max-width: 80vw;
+  width: 60vw;
   border-radius: 15px;
 }
 
@@ -36,24 +36,10 @@
   border: 2px solid #5a0fbc;
   background-color: #fcf2fc;
 }
-/* .quizcard__answer__buttons:nth-child(4):focus {
-  color: green;
-  background: rgba(15, 163, 15, 0.397);
-}
-/*(-n+3)= the first three children */
-/* .quizcard__answer__buttons:nth-child(-n + 3):focus {
-  color: red;
-  background: rgba(194, 38, 38, 0.349); 
-}*/
 
 .quizcard__answer__buttons:hover {
   background-color: #5a0fbc;
   color: #fcf2fc;
-}
-
-.buttonWrong {
-  border: 2px solid red;
-  background-color: thistle;
 }
 
 .quizCard__question {

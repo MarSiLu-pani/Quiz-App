@@ -50,6 +50,7 @@ body {
   z-index: 1;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-left: auto;
 }
 .nextButton:hover {
   background-color: #5a0fbc;
